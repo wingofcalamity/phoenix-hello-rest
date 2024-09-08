@@ -1,0 +1,32 @@
+### vars
+@id=3
+
+### list users
+GET http://localhost:4000/api/users
+
+### get a specific user
+GET http://localhost:4000/api/users/{{id}}
+
+###
+POST http://localhost:4000/api/
+Content-Type: application/json
+{
+  "user": {
+    "name": "test",
+    "email": "test@test"
+  }
+}
+
+###
+PATCH http://localhost:4000/api/users/{{id}}
+Content-Type: application/json
+
+{
+  "user": {
+    "name": "John McPatch",
+    "email": "new@mail"
+  }
+}
+
+### delete a user
+DELETE http://localhost:4000/api/users/{{id}}
