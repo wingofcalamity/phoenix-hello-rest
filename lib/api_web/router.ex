@@ -19,6 +19,7 @@ defmodule ApiWeb.Router do
 
     get "/", PageController, :home
     get "/test", PageController, :test
+    get "/json", PageController, :users
   end
 
   # Other scopes may use custom stacks.

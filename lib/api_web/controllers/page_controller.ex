@@ -15,4 +15,13 @@ defmodule ApiWeb.PageController do
 
     render(conn, :test, users: users, layout: false)
   end
+
+  def users(conn, _params) do
+    users = [
+      %{id: 1, name: "John", age: 45},
+      %{id: 2, name: "Test", age: 23}
+    ]
+
+    json(conn, %{users: users})
+  end
 end
