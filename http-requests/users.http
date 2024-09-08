@@ -7,7 +7,7 @@ GET http://localhost:4000/api/users
 ### get a specific user
 GET http://localhost:4000/api/users/{{id}}
 
-###
+### create a new user
 POST http://localhost:4000/api/
 Content-Type: application/json
 {
@@ -17,7 +17,7 @@ Content-Type: application/json
   }
 }
 
-###
+### update a user
 PATCH http://localhost:4000/api/users/{{id}}
 Content-Type: application/json
 
