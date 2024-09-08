@@ -8,3 +8,6 @@ Content-Type: application/json
     "email": "test@test.com"
   }
 }
+
+# delete a user
+DELETE http://localhost:4000/api/users/1
