@@ -6,4 +6,13 @@ defmodule ApiWeb.PageController do
     # so skip the default app layout.
     render(conn, :home, layout: false)
   end
+
+  def test(conn, _params) do
+    users = [
+      %{id: 1, name: "John", age: 45},
+      %{id: 2, name: "Test", age: 23}
+    ]
+
+    render(conn, :test, users: users, layout: false)
+  end
 end
